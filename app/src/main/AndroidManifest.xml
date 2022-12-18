@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.byd.user.helloworld">
+
+    <!--车辆信息类的权限  COMMON必须要动态注册-->
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_COMMON"/>
+    <!--车辆信息类获取权限-->
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_GET"/>
+    <!--空调类的权限-->
+    <uses-permission android:name="android.permission.BYDAUTO_AC_COMMON"/>
+    <!--空调类获取的权限-->
+    <uses-permission android:name="android.permission.BYDAUTO_AC_GET"/>
+    <!--空调类获取设置权限-->
+    <uses-permission android:name="android.permission.BYDAUTO_AC_SET"/>
+    <!--传感器类获取的权限-->
+    <uses-permission android:name="android.permission.BYDAUTO_SENSOR_GET"/>
+    <!--车速类获取的权限-->
+    <uses-permission android:name="android.permission.BYDAUTO_SPEED_GET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
